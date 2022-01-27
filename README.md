@@ -44,7 +44,7 @@ run tests: `travis-test -p /path/to/project -i 'travisci/ci-sardonyx:packer-1641
 * **-s**: the path to an ssh private key, will be copied to the travis docker container if
   it exists. [default: `$HOME/.ssh/id_travis_test`]
 * **-i**: the travisci docker image
-  name. [default: `ci-sardonyx:packer-1641367644-6e87acce`]
+  name. [default: `travisci/ci-sardonyx:packer-1641367644-6e87acce`]
 
 ### Limitations
 
