@@ -5,7 +5,7 @@ IMG='travisci/ci-sardonyx:packer-1641367644-6e87acce'
 TRAVIS_SSH_KEY="$HOME/.ssh/id_travis_test"
 SSH_OPT=false
 
-SCRIPTDIR=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
+SCRIPTDIR="$(dirname $([ -L $0 ] && readlink -f $0 || echo $0))"
 TRAVIS_HOME='/home/travis'
 while getopts "p:i:s:" OPTION; do
   case $OPTION in
